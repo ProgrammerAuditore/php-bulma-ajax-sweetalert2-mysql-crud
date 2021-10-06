@@ -16,8 +16,8 @@
     $precio = $cargaUtil->precio;
 
     include_once('../database/funciones.php');
-    $respuesta = eliminar($nombre, $precio, $descripcion);
-
+    $respuesta = crear($nombre, $descripcion, $precio);
+    
     // Devolver al cliente la respuesta de la función
     // es decir, un response
     echo json_encode($respuesta);
